@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className={`${inter.className} bg-gradient-to-r from-orange-400 to-rose-400 h-screen`}>
+    <div className={`${inter.className} bg-gradient-to-r from-orange-400 to-rose-400`}>
     <Header/>
     <Hero/>
     </div>
