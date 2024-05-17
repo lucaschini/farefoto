@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function Hero(){
     return(
         <div className="h-screen flex flex-col gap-24  pl-6 items-center justify-center">
-                <h1 className="font-bold text-8xl">
+                <h1 className="font-bold text-6xl md:text-8xl">
                     Revelações de fotos
                 </h1>
                 <h2>
