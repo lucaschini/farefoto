@@ -2,8 +2,13 @@ import Image from "next/image"
 
 export default function Hero(){
     return(
-        <>
-        <Image src='/Polaroid frente.png' width={100} height={100} className="absolute"/>
-        </>
+        <div className="h-screen flex flex-col gap-24  pl-6 items-center justify-center">
+                <h1 className="font-bold text-6xl md:text-8xl">
+                    Revelações de fotos
+                </h1>
+                <h2>
+                    Trabalhamos com revelações de fotos, indo dos tamanhos 9x12cm até 76x200cm
+                </h2>
+        </div>
     )
 }
