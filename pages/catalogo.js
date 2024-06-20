@@ -1,5 +1,5 @@
-import Header from "./components/Header";
-import Card from "./components/Card";
+import Header from "./components/Header.jsx";
+import Card from "./components/Card.jsx";
 
 import products from "./api/products";
 

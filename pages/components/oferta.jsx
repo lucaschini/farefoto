@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Card from "./Card";
+import Card from "./Card.jsx";
 import oferta from "./../api/oferta";
 
 export default function Oferta() {
