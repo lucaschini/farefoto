@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import Header from "./components/Header";
-import Hero from './components/Hero';
-import Oferta from "./components/Oferta"
-import Loc from "./components/Loc";
+import Header from "./components/Header.jsx";
+import Hero from "./components/Hero.jsx";
+import Oferta from "./components/Oferta.jsx";
+import Loc from "./components/Loc.jsx";
 
 import { Inter } from "next/font/google";
 
