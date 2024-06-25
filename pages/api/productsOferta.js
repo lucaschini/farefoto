@@ -1,6 +1,6 @@
 
 
-const oferta = [
+const productsOferta = [
     {
         id: 1,
         category: "revelacoes",
@@ -27,4 +27,4 @@ const oferta = [
     }
 ];
 
-export default oferta;
+export default productsOferta;

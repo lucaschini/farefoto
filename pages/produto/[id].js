@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import products from "../api/products";
+import products from "@/api/products";
 
 import { useRouter } from 'next/router'
 import Image from 'next/image';
@@ -15,7 +15,7 @@ export default function ProdutcInfo() {
         <>
             <Header />
             {console.log(returnedObj)}
-            <Image src={returnedObj.img} width={100} height={100}/>
+            <Image src={returnedObj.img} width={100} height={100} alt=""/>
             <p>{returnedObj.title}</p>
             <p>{returnedObj.content}</p>
         </>

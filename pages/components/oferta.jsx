@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import Card from "./Card";
-import oferta from "./../api/oferta";
+import Card from "@/components/Card";
+import oferta from "@/api/productsOferta";
 
 export default function Oferta() {
   return (
