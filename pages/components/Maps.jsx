@@ -1,4 +1,4 @@
-export default function Loc() {
+export default function Maps() {
   return (
     <div className="bg-white">
       <div className="flex flex-col items-center gap-8 pt-10 pb-5 bg-black rounded-t-[2.5rem]">

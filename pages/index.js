@@ -1,21 +1,18 @@
 import Image from "next/image";
 
-import Header from "../pages/components/Header";
-import Hero from "./components/Hero";
-import Oferta from "./components/Oferta";
-import Loc from "./components/Loc";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Oferta from "@/components/Oferta";
+import Maps from "@/components/Maps";
 
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className={`${inter.className} bg-white`}>
+    <div>
     <Header/>
     <Hero/>
     <Oferta/>
-    <Loc/>
+    <Maps/>
     </div>
   );
 }
