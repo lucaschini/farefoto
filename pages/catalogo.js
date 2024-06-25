@@ -1,5 +1,5 @@
-import Header from "./components/Header";
-import Card from "./components/Card";
+import Header from "@/componentsHeader";
+import Card from "@/components/Card";
 
 import products from "./api/products";
 

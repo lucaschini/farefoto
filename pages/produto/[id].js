@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import Header from "@/components/Header";
 import products from "../api/products";
 
 import { useRouter } from 'next/router'
