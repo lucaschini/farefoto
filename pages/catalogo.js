@@ -1,9 +1,7 @@
 import Header from "@/components/Header";
 import Card from "@/components/Card";
 
-import products from "@/api/products";
-
-export default function Catalogo() {
+export default function Catalogo({data}){
     return (
         <div className="bg-[#1D1D1D]">
             <Header />
@@ -23,7 +21,7 @@ export default function Catalogo() {
                         <h1>Produtos</h1>
                     </div>
                     <div className="flex flex-col items-center 2xl:grid-cols-3 lg:grid lg:grid-cols-2 lg:grid-flow-row gap-6">
-                        {products.map((product) => (
+                        {data.map((product) => (
                             <Card key={product.id} arr={product} />
                         ))}
                     </div>
