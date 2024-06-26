@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import Card from "@/components/Card";
 import products from "@/api/products";
 import Image from "next/image";
 

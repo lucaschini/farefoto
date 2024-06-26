@@ -8,6 +8,7 @@ const productsOferta = [
         content: `Imortalize seus momentos favoritos em uma foto 10x15! Escolha entre o acabamento brilhante para um brilho vibrante ou o acabamento fosco para uma elegância sutil. Capture memórias que durarão para sempre.`,
         price: "R$ 2,50",
         img: "/foto-card.jpeg",
+        link: "https://wa.link/gcaqtx"
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ const productsOferta = [
         content: `Imortalize seus momentos favoritos em uma foto 10x15! Escolha entre o acabamento brilhante para um brilho vibrante ou o acabamento fosco para uma elegância sutil. Capture memórias que durarão para sempre.`,
         price: "R$ 2,50",
         img: "/foto-card.jpeg",
+        link: "https://wa.link/gcaqtx"
     },
     {
         id: 3,
@@ -24,7 +26,9 @@ const productsOferta = [
         content: `Imortalize seus momentos favoritos em uma foto 10x15! Escolha entre o acabamento brilhante para um brilho vibrante ou o acabamento fosco para uma elegância sutil. Capture memórias que durarão para sempre.`,
         price: "R$ 2,50",
         img: "/foto-card.jpeg",
-    }
+        link: "https://wa.link/gcaqtx"
+    },
+   
 ];
 
 export default productsOferta;
