@@ -23,6 +23,8 @@ A Fare Foto é uma empresa especializada em fotografia e impressão de alta qual
 
 O deploy contínuo é feito utilizando a plataforma Vercel. Qualquer commit na branch principal (main) dispara automaticamente um novo deploy.
 
+Caso deseje visitar o site, é só clicar neste link: [Fare Foto](https://farefoto.vercel.app/)
+
 ## Contato 📞
 
 Contato do desenvolvedor: lucaschinimendonca@protonmail.com
