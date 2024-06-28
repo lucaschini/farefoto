@@ -19,7 +19,7 @@ export default function Home() {
         </div>
         <div className="z-10 h-full bg-gradient-to-b from-orange-400 via-transparent absolute top-0 left-0 inset-0"></div>
         <div className="absolute top-20 2xl:top-80 lg:left-14 flex flex-col items-center gap-6 z-20 bg-white lg:max-w-[50%] max-w-[80%] p-9 rounded-2xl ">
-          <h1 className="font-extrabold text-3xl lg:text-6xl ">
+          <h1 className="font-extrabold text-3xl lg:text-6xl ">               
             Reviva Seus Melhores Momentos
           </h1>
           <p className="lg:text-lg font-medium">
