@@ -38,23 +38,26 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col gap-12 bg-white p-10">
-        <h1 className="font-bold text-4xl text-black">Produtos em oferta</h1>
         <div className="w-full h-52 bg-amber-400 rounded-2xl flex justify-center items-center shadow-lg hover:shadow-xl">
           <h1 className="text-2xl sm:text-4xl font-bold">
             Pacotes promocionais!
           </h1>
         </div>
         <div className="flex flex-col gap-10 xl:flex-row w-full justify-between items-center">
-          {oferta.map((product) => (
-            <a href={`${product.link}`} key={product.id} target="_blank">
-              <div className="h-[378px] w-[300px] lg:h-[569px] lg:w-[450px] bg-white text-black shadow-xl hover:shadow-2xl flex flex-col justify-between">
-                <Image src={product.img} width={500} height={500} alt="" />
-                <div className="flex justify-between text-xl sm:text-3xl font-semibold pb-7 px-6">
-                  <div className="flex flex-col gap-2">
-                    <h2>{product.title}</h2>
-                    <p className="text- ">Veja mais</p>
+        {oferta.map((product) => (
+            <a
+              href={`${product.link} ${product.title}`}
+              key={product.id}
+              target="_blank"
+            >
+              <div className="max-w-[500px] max-h-[579px] bg-white text-black shadow-xl hover:shadow-2xl flex flex-col justify-between">
+                <Image src={product.img} width={400} height={379} alt="" />
+                <div className="flex flex-col justify-between gap-1 lg:gap-4 text-md md:text-3xl p-2 lg:p-5 ">
+                  <h2 className="font-normal">{product.title}</h2>
+                  <div className="flex justify-between items-center font-semibold">
+                    <h2 className="text-orange-600">{product.price}</h2>
+                    <btn className=" bg-green-600 p-2 lg:px-4 rounded-full text-white drop-shadow-xl">Comprar</btn>
                   </div>
-                  <h2>{product.price}</h2>
                 </div>
               </div>
             </a>
