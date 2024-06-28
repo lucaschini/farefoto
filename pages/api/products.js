@@ -1,5 +1,3 @@
-
-
 const products = [
     {
         id: 1,
@@ -8,7 +6,7 @@ const products = [
         content: `Imortalize seus momentos favoritos em uma foto 10x15! Escolha entre o acabamento brilhante para um brilho vibrante ou o acabamento fosco para uma elegância sutil. Capture memórias que durarão para sempre.`,
         price: "R$ 2,50",
         img: "/foto-card.jpeg",
-        link: "https://wa.link/gcaqtx"
+        link: "https://wa.me/+5511977843872/?text=Olá, gostaria de fazer um pedido de ${product.title}"
     },
     {
         id: 2,
