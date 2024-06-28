@@ -52,7 +52,7 @@ export default function Home() {
             >
               <div className="max-w-[500px] max-h-[579px] bg-white text-black shadow-xl hover:shadow-2xl flex flex-col justify-between">
                 <Image src={product.img} width={400} height={379} alt="" />
-                <div className="flex flex-col justify-between gap-1 lg:gap-4 text-md md:text-3xl p-2 lg:p-5 ">
+                <div className="flex flex-col justify-between gap-1 lg:gap-4 text-md md:text-2xl p-2 lg:p-5 ">
                   <h2 className="font-normal">{product.title}</h2>
                   <div className="flex justify-between items-center font-semibold">
                     <h2 className="text-orange-600">{product.price}</h2>
