@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Header />
       <div className="h-screen flex justify-center relative text-black bg-white">
-        <div className="h-screen z-0">
+        <div className="h-full z-0">
           <Image
             src="/background-hero.jpeg"
             alt=""
