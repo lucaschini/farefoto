@@ -1,9 +1,9 @@
 import "@/styles/globals.css";
 
-import { Poppins } from "next/font/google";
+import { Roboto } from "next/font/google";
 
-const poppins = Poppins({ 
-  weight: ['400', '500', '600'],
+const roboto = Roboto({ 
+  weight: ['300', '500', '700'],
   subsets: ["latin"]
 });
 
@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${poppins.className} bg-[#1D1D1D]`}>
+    <main className={`${roboto.className} bg-mainBlack`}>
       <Component {...pageProps} />
     </main>
   )
