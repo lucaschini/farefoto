@@ -7,9 +7,14 @@ const poppins = Poppins({
   subsets: ["latin"]
 });
 
+export const metadata = {
+  title: 'Fare Foto',
+  description: 'A melhor loja de fotografia!',
+}
+
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${poppins.className}`}>
+    <main className={`${poppins.className} bg-[#1D1D1D]`}>
       <Component {...pageProps} />
     </main>
   )
