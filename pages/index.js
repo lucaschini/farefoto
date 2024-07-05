@@ -47,7 +47,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-10 xl:flex-row w-full justify-between items-center">
-          {productsOferta.map((product) => (
+          {maisVendidos.map((product) => (
             <a
               href={`${product.link} ${product.title}`}
               key={product.id}
