@@ -2,10 +2,7 @@ import Header from "@/components/Header";
 import products from "@/api/products";
 import Image from "next/image";
 
-export const metadata = {
-  title: 'Produtos',
-  description: 'Produtos - Fare Foto',
-}
+
 
 import { useState } from "react";
 
