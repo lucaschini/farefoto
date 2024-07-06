@@ -40,60 +40,69 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col gap-12 bg-white p-10">
-        <div className="w-full h-52 bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-yellow-200 via-red-500 to-fuchsia-500 rounded-2xl flex justify-center items-center shadow-2xl">
-          <h1 className="text-2xl sm:text-4xl font-bold">
+        <div className="w-full bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-yellow-200 via-red-500 to-fuchsia-500 rounded-2xl flex flex-col justify-center items-center shadow-2xl p-7">
+          <h1 className="text-2xl text-center sm:text-4xl font-bold mb-10 bg-mainWhite text-mainColor rounded-xl p-4 shadow-xl">
             Produtos mais vendidos!
           </h1>
-        </div>
 
-        <div className="flex flex-col gap-10 xl:flex-row w-full justify-between items-center">
-          {maisVendidos.map((product) => (
-            <a
-              href={`${product.link} ${product.title}`}
-              key={product.id}
-              target="_blank"
-            >
-              <div className="max-w-[500px] max-h-[579px] bg-white text-black shadow-xl hover:shadow-2xl flex flex-col justify-between">
-                <Image src={product.img} width={400} height={379} alt="" />
-                <div className="flex flex-col justify-between gap-1 lg:gap-4 text-md md:text-2xl p-2 lg:p-5 ">
-                  <h2 className="font-normal">{product.title}</h2>
-                  <div className="flex justify-between items-center font-semibold">
-                    <h2 className="text-orange-600">{product.price}</h2>
-                    <btn className=" bg-green-600 p-2 lg:px-4 rounded-full text-white drop-shadow-xl">
-                      Comprar
-                    </btn>
+          <div className="flex flex-col gap-10 xl:flex-row w-full justify-between items-center">
+            {maisVendidos.map((product) => (
+              <a
+                href={`${product.link} ${product.title}`}
+                key={product.id}
+                target="_blank"
+              >
+                <div className="max-h-64 w-52 md:max-h-[500px] md:w-[400px] bg-white text-black shadow-xl hover:shadow-2xl flex flex-col justify-around">
+                  <div className="h-[30rem] w-full relative bg-center">
+                    <Image src={product.img} fill alt="" />
+                  </div>
+                  <div className="flex flex-col justify-between gap-1 lg:gap-4 text-md md:text-3xl p-2 lg:p-5 ">
+                    <h2 className="font-normal">{product.title}</h2>
+                    <div className="flex justify-between items-center font-semibold">
+                      <h2 className="text-orange-600 text-sm md:text-3xl">
+                        {product.price}
+                      </h2>
+                      <btn className=" bg-green-600 px-2 py-1 lg:px-4 rounded-full text-white drop-shadow-xl">
+                        Comprar
+                      </btn>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          ))}
+              </a>
+            ))}
+          </div>
         </div>
-        <div className="w-full h-52 bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-yellow-200 via-red-500 to-fuchsia-500 rounded-2xl flex justify-center items-center shadow-lg hover:shadow-xl">
-          <h1 className="text-2xl sm:text-4xl font-bold">
-            Pacotes promocionais!
+        <div className="w-full bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-yellow-200 via-red-500 to-fuchsia-500 rounded-2xl flex flex-col justify-center items-center shadow-2xl p-7">
+          <h1 className="text-2xl text-center sm:text-4xl font-bold mb-10 bg-mainWhite text-mainColor rounded-xl p-4 shadow-xl">
+            Pacotes Promocionais!
           </h1>
-        </div>
-        <div className="flex flex-col gap-10 xl:flex-row w-full justify-between items-center">
-          {productsOferta.map((product) => (
-            <a
-              href={`${product.link} ${product.title}`}
-              key={product.id}
-              target="_blank"
-            >
-              <div className="max-w-[500px] max-h-[579px] bg-white text-black shadow-xl hover:shadow-2xl flex flex-col justify-between">
-                <Image src={product.img} width={400} height={379} alt="" />
-                <div className="flex flex-col justify-between gap-1 lg:gap-4 text-md md:text-2xl p-2 lg:p-5 ">
-                  <h2 className="font-normal">{product.title}</h2>
-                  <div className="flex justify-between items-center font-semibold">
-                    <h2 className="text-orange-600">{product.price}</h2>
-                    <btn className=" bg-green-600 p-2 lg:px-4 rounded-full text-white drop-shadow-xl">
-                      Comprar
-                    </btn>
+
+          <div className="flex flex-col gap-10 xl:flex-row w-full justify-between items-center">
+            {productsOferta.map((product) => (
+              <a
+                href={`${product.link} ${product.title}`}
+                key={product.id}
+                target="_blank"
+              >
+                <div className="max-h-64 w-52 md:max-h-[500px] md:w-[400px] bg-white text-black shadow-xl hover:shadow-2xl flex flex-col justify-around">
+                  <div className="h-[30rem] w-full relative bg-center">
+                    <Image src={product.img} fill alt="" />
+                  </div>
+                  <div className="flex flex-col justify-between gap-1 lg:gap-4 text-md md:text-3xl p-2 lg:p-5 ">
+                    <h2 className="font-normal">{product.title}</h2>
+                    <div className="flex justify-between items-center font-semibold">
+                      <h2 className="text-orange-600 text-sm md:text-3xl">
+                        {product.price}
+                      </h2>
+                      <btn className=" bg-green-600 px-2 py-1 lg:px-4 rounded-full text-white drop-shadow-xl">
+                        Comprar
+                      </btn>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          ))}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
 
