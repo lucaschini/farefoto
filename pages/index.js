@@ -1,14 +1,16 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { productsOferta, maisVendidos } from "@/api/productsOferta";
 
 import Image from "next/image";
 import Link from "next/link";
 
+
 export default function Home() {
   return (
     <>
       <Header />
-      <div className="h-screen flex justify-center relative text-black bg-white">
+      <div className="h-screen flex justify-center relative text-black bg-mainWhite">
         <div className="h-full z-0">
           <Image
             src="/background-hero.jpeg"
@@ -45,14 +47,14 @@ export default function Home() {
             Produtos mais vendidos!
           </h1>
 
-          <div className="flex flex-col gap-10 xl:flex-row w-full justify-between items-center">
+          <div className="flex flex-col gap-10 xl:flex-row w-full items-center justify-evenly">
             {maisVendidos.map((product) => (
               <a
                 href={`${product.link} ${product.title}`}
                 key={product.id}
                 target="_blank"
               >
-                <div className="max-h-64 w-52 md:max-h-[500px] md:w-[400px] bg-white text-black shadow-xl hover:shadow-2xl flex flex-col justify-around">
+                <div className="max-h-64 w-52 md:max-h-[500px] md:w-[400px] bg-mainWhite text-black shadow-xl hover:shadow-2xl flex flex-col justify-around">
                   <div className="h-[30rem] w-full relative bg-center">
                     <Image src={product.img} fill alt="" />
                   </div>
@@ -77,14 +79,14 @@ export default function Home() {
             Pacotes Promocionais!
           </h1>
 
-          <div className="flex flex-col gap-10 xl:flex-row w-full justify-between items-center">
+          <div className="flex flex-col gap-10 xl:flex-row w-full justify-evenly items-center">
             {productsOferta.map((product) => (
               <a
                 href={`${product.link} ${product.title}`}
                 key={product.id}
                 target="_blank"
               >
-                <div className="max-h-64 w-52 md:max-h-[500px] md:w-[400px] bg-white text-black shadow-xl hover:shadow-2xl flex flex-col justify-around">
+                <div className="max-h-64 w-52 md:max-h-[500px] md:w-[400px] bg-mainWhite text-black shadow-xl hover:shadow-2xl flex flex-col justify-around">
                   <div className="h-[30rem] w-full relative bg-center">
                     <Image src={product.img} fill alt="" />
                   </div>
@@ -119,6 +121,7 @@ export default function Home() {
         ></iframe>
         <p> Rua do Rosário, 68 - Centro, Jundiaí</p>
       </div>
+      <Footer />
     </>
   );
 }
