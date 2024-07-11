@@ -41,8 +41,8 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col gap-12 bg-white p-10">
-        <div className="w-full bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-yellow-200 via-red-500 to-fuchsia-500 rounded-2xl flex flex-col justify-center items-center shadow-2xl p-7">
+      <div className="flex flex-col gap-12 bg-white p-10 bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-yellow-200 via-red-500 to-fuchsia-500">
+        <div className="w-full rounded-2xl flex flex-col justify-center items-center p-7">
           <h1 className="text-2xl text-center sm:text-4xl font-bold mb-10 bg-mainWhite text-mainColor rounded-xl p-4 shadow-xl">
             Produtos mais vendidos!
           </h1>
@@ -54,9 +54,9 @@ export default function Home() {
                 key={product.id}
                 target="_blank"
               >
-                <div className="max-h-64 w-52 md:max-h-[500px] md:w-[400px] bg-mainWhite text-black shadow-xl hover:shadow-2xl flex flex-col justify-around">
-                  <div className="h-[30rem] w-full relative bg-center">
-                    <Image src={product.img} fill alt="" />
+                <div className="h-64 w-52 md:h-[550px] md:w-[400px] bg-mainWhite text-black shadow-xl hover:shadow-2xl flex flex-col justify-around">
+                  <div className="h-[30rem] w-full relative">
+                    <Image src={product.img} fill alt="" className="object-cover"/>
                   </div>
                   <div className="flex flex-col justify-between gap-1 lg:gap-4 text-md md:text-3xl p-2 lg:p-5 ">
                     <h2 className="font-normal">{product.title}</h2>
@@ -74,21 +74,21 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="w-full bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-yellow-200 via-red-500 to-fuchsia-500 rounded-2xl flex flex-col justify-center items-center shadow-2xl p-7">
+        <div className="w-full rounded-2xl flex flex-col justify-center items-center p-7">
           <h1 className="text-2xl text-center sm:text-4xl font-bold mb-10 bg-mainWhite text-mainColor rounded-xl p-4 shadow-xl">
             Pacotes Promocionais!
           </h1>
 
-          <div className="flex flex-col gap-10 xl:flex-row w-full justify-evenly items-center">
+          <div className="flex flex-col gap-10 xl:flex-row w-full items-center justify-evenly">
             {productsOferta.map((product) => (
               <a
                 href={`${product.link} ${product.title}`}
                 key={product.id}
                 target="_blank"
               >
-                <div className="max-h-64 w-52 md:max-h-[500px] md:w-[400px] bg-mainWhite text-black shadow-xl hover:shadow-2xl flex flex-col justify-around">
-                  <div className="h-[30rem] w-full relative bg-center">
-                    <Image src={product.img} fill alt="" />
+                <div className="h-64 w-52 md:h-[550px] md:w-[400px] bg-mainWhite text-black shadow-xl hover:shadow-2xl flex flex-col justify-around">
+                  <div className="h-[30rem] w-full relative">
+                    <Image src={product.img} fill alt="" className="object-cover"/>
                   </div>
                   <div className="flex flex-col justify-between gap-1 lg:gap-4 text-md md:text-3xl p-2 lg:p-5 ">
                     <h2 className="font-normal">{product.title}</h2>
