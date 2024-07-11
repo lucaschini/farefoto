@@ -42,9 +42,9 @@ export default function Catalogo() {
               key={product.id}
               target="_blank"
             >
-              <div className="max-h-64 md:min-h-[620px] md:max-w-[500px] bg-white text-black shadow-xl hover:shadow-2xl flex flex-col justify-around">
+              <div className="h-64 md:h-[620px] md:max-w-[500px] bg-white text-black shadow-xl hover:shadow-2xl flex flex-col justify-around">
                 <div className="h-[30rem] w-full relative bg-center">
-                  <Image src={product.img} fill alt="" />
+                  <Image src={product.img} fill alt="" className="object-fill"/>
                 </div>
                 <div className="flex flex-col justify-between gap-1 lg:gap-4 text-md md:text-3xl p-2 lg:p-5 ">
                   <h2 className="font-normal">{product.title}</h2>
