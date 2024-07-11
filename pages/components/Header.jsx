@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="flex items-center gap-6 xl:gap-32 p-10 font-semibold text-base lg:text-xl bg-gradient-to-r bg-mainColor">
+    <div className="flex items-center gap-6 xl:gap-32 p-10 font-semibold text-base lg:text-xl bg-gradient-to-r bg-mainColor text-mainWhite">
       <Link href="/">
         <Image src="/logo.png" width={234} height={92} alt="Fare Foto"/>
       </Link>
