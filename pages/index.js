@@ -20,7 +20,7 @@ export default function Home() {
           />
         </div>
         <div className="z-10 h-full bg-gradient-to-b from-orange-400 via-transparent absolute top-0 left-0 inset-0"></div>
-        <div className="absolute top-20 2xl:top-80 lg:left-14 flex flex-col items-center gap-6 z-20 bg-white lg:max-w-[50%] max-w-[80%] p-9 rounded-2xl ">
+        <div className="absolute top-20 2xl:top-80 lg:left-14 flex flex-col gap-6 z-20 bg-white lg:max-w-[50%] max-w-[80%] p-9 rounded-2xl ">
           <h1 className="font-extrabold text-3xl lg:text-6xl ">
             Reviva Seus Melhores Momentos
           </h1>
@@ -41,7 +41,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col gap-12 bg-white p-10 bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-yellow-200 via-red-500 to-fuchsia-500">
+      <div className="flex flex-col gap-12 p-10">
         <div className="w-full rounded-2xl flex flex-col justify-center items-center p-7">
           <h1 className="text-2xl text-center sm:text-4xl font-bold mb-10 bg-mainWhite text-mainColor rounded-xl p-4 shadow-xl">
             Produtos mais vendidos!
@@ -108,19 +108,19 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center gap-8 pt-10 pb-5">
-        <h1 className="text-4xl sm:text-6xl font-bold">Nossa Localização</h1>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.444634790235!2d-46.88614542284793!3d-23.190461248074232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf27014eaddef1%3A0xfcdd7a9d7997665f!2sFare%20Foto!5e0!3m2!1spt-BR!2sbr!4v1717522329755!5m2!1spt-BR!2sbr"
-          width="600"
-          height="450"
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          className="w-[80%]"
-        ></iframe>
-        <p> Rua do Rosário, 68 - Centro, Jundiaí</p>
-      </div>
+      <div className="flex flex-col items-center gap-8 pt-10 pb-5 bg-orange-400 text-white">
+          <h1 className="text-4xl sm:text-6xl font-bold drop-shadow-xl">Nossa Localização</h1>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.444634790235!2d-46.88614542284793!3d-23.190461248074232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf27014eaddef1%3A0xfcdd7a9d7997665f!2sFare%20Foto!5e0!3m2!1spt-BR!2sbr!4v1717522329755!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-[80%] md:w-[50%]"
+          ></iframe>
+          <p> Rua do Rosário, 68 - Centro, Jundiaí</p>
+        </div>
       <Footer />
     </>
   );

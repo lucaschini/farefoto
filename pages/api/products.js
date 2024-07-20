@@ -1,7 +1,7 @@
 const products = [
   {
     id: 1,
-    category: "revelacoes",
+    category: "Revelações",
     title: "Revelação De fotos",
     content: `Imortalize seus momentos favoritos em uma foto 10x15! Escolha entre o acabamento brilhante para um brilho vibrante ou o acabamento fosco para uma elegância sutil. Capture memórias que durarão para sempre.`,
     price: "Consulte",
@@ -10,7 +10,7 @@ const products = [
   },
   {
     id: 2,
-    category: "revelacoes",
+    category: "Revelações",
     title: "Banners",
     content: `Imortalize seus momentos favoritos em uma foto 10x15! Escolha entre o acabamento brilhante para um brilho vibrante ou o acabamento fosco para uma elegância sutil. Capture memórias que durarão para sempre.`,
     price: "Consulte",
@@ -19,7 +19,7 @@ const products = [
   },
   {
     id: 3,
-    category: "albuns",
+    category: "Álbuns",
     title: "Álbum",
     content: ``,
     price: "R$ 10,90",
@@ -365,7 +365,7 @@ const products = [
     title: "Kit Instax Mini 12",
     content: ``,
     price: "R$ 579,00",
-    img: "/catalogo_fotos/kit_instax.jpg",
+    img: "/catalogo_fotos/kit_instax.webp",
     link: `https://wa.me/+5511953147703/?text=Olá, gostaria de fazer um pedido de`,
   },
   {
@@ -478,7 +478,7 @@ const products = [
   },
   {
     id: 54,
-    category: "Taça",
+    category: "Taças",
     title: "Taça Transparente",
     content: ``,
     price: "R$ 25,90",
