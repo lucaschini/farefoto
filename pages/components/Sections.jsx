@@ -1,9 +1,8 @@
-import Link from "next/link";
+import Link from "next/link";   
 
 export default function Sections() {
   return (
     <div>
-      <div></div>
       <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 place-items-stretch gap-10 my-6">
         <div className="flex justify-center items-center h-[500px] bg-orange-400 md:rounded-tr-[100px] md:rounded-br-[100px]">
           1
