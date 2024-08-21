@@ -23,11 +23,11 @@ const EmblaCarousel = (props) => {
   } = usePrevNextButtons(emblaApi)
 
   return (
-    <section className="embla">
+    <section className="embla py-8">
       <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
+        <div className="embla__container py-4">
           {products.map((product) => (
-            <Card product={product} />
+            <Card product={product} key={product.id}/>
           ))}
         </div>
       </div>

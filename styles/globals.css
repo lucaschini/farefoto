@@ -28,7 +28,7 @@
   max-width: 100vw;
   margin: auto;
   --slide-height: 19rem;
-  --slide-spacing: 0rem;
+  --slide-spacing: 0.2rem;
   --slide-size: 70%;
 }
 .embla__viewport {

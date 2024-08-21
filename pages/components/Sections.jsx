@@ -8,7 +8,7 @@ export default function Sections() {
           1
         </div>
         <div className="flex flex-col justify-center items-center gap-8">
-          <h1 className="text-5xl font-bold">Revelações Fotográficas</h1>
+          <h1 className="text-5xl font-bold text-center">Revelações Fotográficas</h1>
           <p className="w-3/4 text-center">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
             neque voluptatum vero quidem quae a totam at officiis inventore
@@ -22,7 +22,7 @@ export default function Sections() {
           </Link>
         </div>
         <div className="flex flex-col justify-center items-center gap-8">
-          <h1 className="text-5xl font-bold">Revelações Fotográficas</h1>
+          <h1 className="text-5xl font-bold text-center">Revelações Fotográficas</h1>
           <p className="w-3/4 text-center">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
             neque voluptatum vero quidem quae a totam at officiis inventore
@@ -42,7 +42,7 @@ export default function Sections() {
           5
         </div>
         <div className="flex flex-col justify-center items-center gap-8">
-          <h1 className="text-5xl font-bold">Revelações Fotográficas</h1>
+          <h1 className="text-5xl font-bold text-center">Revelações Fotográficas</h1>
           <p className="w-3/4 text-center">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
             neque voluptatum vero quidem quae a totam at officiis inventore
