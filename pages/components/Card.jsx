@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Card({ product }) {
   return (
-    <Link href={`product/${product.id}`}>
+    <Link href={`produto/${product.id}`}>
       <div className="h-64 w-48 md:h-[550px] md:w-[400px] bg-white text-black shadow-xl hover:shadow-2xl flex flex-col justify-around">
         <div className="h-[30rem] w-full relative">
           <Image src={product.imageUrl} fill alt="" className="object-center" />

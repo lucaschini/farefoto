@@ -4,7 +4,7 @@ import { prisma } from "@/pages/lib/prisma";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Product({ product }) {
+export default function Produto({ product }) {
   return (
     <>
       <Header />

@@ -15,7 +15,7 @@ export default function Catalogo({ products }) {
 }
 
 export const getServerSideProps = async () => {
-  const products = await prisma.Product.findMany();
+  const products = await prisma.product.findMany();
 
   return { props: { products } };
 };

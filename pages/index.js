@@ -1,18 +1,17 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Loc from "@/components/Loc";
-import HeroPais from "@/components/HeroPais";
+import Hero from "@/components/Hero";
 import Sections from "@/components/Sections";
 import EmblaCarousel from './components/EmblaCarousel';
-import { prisma } from "./lib/prisma";
 
-const OPTIONS = { loop: true }
+import { prisma } from "./lib/prisma";
 
 export default function Home({ products }) {
   return (
     <>
       <Header />
-      <HeroPais />
+      <Hero />
       <EmblaCarousel products={products} ></EmblaCarousel>
       <Sections />
       <Loc />
@@ -22,7 +21,7 @@ export default function Home({ products }) {
 }
 
 export const getServerSideProps = async () => {
-  const products = await prisma.Product.findMany();
+  const products = await prisma.product.findMany();
 
   return { props: { products } };
 };
