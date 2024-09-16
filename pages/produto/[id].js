@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { prisma } from "@/pages/lib/prisma";
+import { prisma } from "@/lib/prisma";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -62,7 +62,7 @@ export async function getStaticPaths() {
   const productsIds = await prisma.product.findMany();
   return {
     paths: productsIds.map((id) => ({
-      params: { id: id.toString() },
+      params: { id: id.toString() }, // aqui ta pegando o objeto do produto inves de pegar somente a string do id
     })),
     fallback: true, // false or "blocking"
   };

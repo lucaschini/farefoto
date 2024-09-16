@@ -3,9 +3,9 @@ import Footer from "@/components/Footer";
 import Loc from "@/components/Loc";
 import Hero from "@/components/Hero";
 import Sections from "@/components/Sections";
-import EmblaCarousel from './components/EmblaCarousel';
+import EmblaCarousel from '@/carrousel/EmblaCarousel';
 
-import { prisma } from "./lib/prisma";
+import { prisma } from "@/lib/prisma";
 
 export default function Home({ products }) {
   return (

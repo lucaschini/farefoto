@@ -6,7 +6,7 @@ import {
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
 import useEmblaCarousel from 'embla-carousel-react'
-import Card from './Card'
+import Card from '@/components/Card'
 
 const EmblaCarousel = (props) => {
   const { products, options } = props
