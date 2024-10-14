@@ -59,10 +59,13 @@ export default function Produto({ product }) {
 }
 
 export async function getStaticPaths() {
-  const productsIds = await prisma.product.findMany();
+  const productsIds = await prisma.product.findMany({
+    select: {id: true},
+  });
+
   return {
-    paths: productsIds.map((id) => ({
-      params: { id: id.toString() }, // aqui ta pegando o objeto do produto inves de pegar somente a string do id
+    paths: productsIds.map((product) => ({
+      params: { id: product.id.toString() }, // TOdo: aqui ta pegando o objeto do produto inves de pegar somente a string do id
     })),
     fallback: true, // false or "blocking"
   };
