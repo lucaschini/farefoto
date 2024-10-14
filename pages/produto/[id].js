@@ -65,9 +65,9 @@ export async function getStaticPaths() {
 
   return {
     paths: productsIds.map((product) => ({
-      params: { id: product.id.toString() }, // TOdo: aqui ta pegando o objeto do produto inves de pegar somente a string do id
+      params: { id: product.id.toString() },
     })),
-    fallback: true, // false or "blocking"
+    fallback: 'blocking', // false or "blocking"
   };
 }
 
