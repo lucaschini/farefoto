@@ -29,3 +29,6 @@ A criação deste projeto não é apenas entregar uma página funcional; trata-s
 ---
 
 Agradeço por conferir este repositório e ficaria feliz em discutir como minha experiência e dedicação podem agregar valor ao seu próximo projeto!
+
+ref https://www.socd.com.br/
+
