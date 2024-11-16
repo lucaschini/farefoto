@@ -10,9 +10,10 @@ import { prisma } from "@/lib/prisma";
 export default function Home({ products }) {
   return (
     <>
-      <Header />
+      <Header/>
       <Hero />
-      <EmblaCarousel products={products} ></EmblaCarousel>
+      <h1 className="h-9 text-4xl font-bold pl-4 py-10">Produtos Populares 🔥</h1>
+      <EmblaCarousel products={products}></EmblaCarousel>
       <Sections />
       <Loc />
       <Footer />
