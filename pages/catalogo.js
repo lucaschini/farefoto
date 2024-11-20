@@ -72,7 +72,7 @@ export default function Catalogo({ products }) {
             <option value="Taças">Taças</option>
           </select>
         </div>
-        <div className=" grid grid-cols-2 lg:grid-flow-row 2xl:grid-cols-4 gap-40 mx-5">
+        <div className="grid grid-cols-2 lg:grid-flow-row 2xl:grid-cols-4 gap-2 md:gap-6">
           {buscaFiltrada.map((product) => (
             <Card product={product} key={product.id} />
           ))}
