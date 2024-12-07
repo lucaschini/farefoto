@@ -59,6 +59,7 @@ export default function Catalogo({ products }) {
             <option value="Calendários">Calendários</option>
             <option value="Canecas">Canecas</option>
             <option value="Câmeras">Câmeras</option>
+            <option value="Chaveiros">Chaveiros</option>
             <option value="Copos">Copos</option>
             <option value="Filme">Filme</option>
             <option value="Fotos">Fotos</option>
